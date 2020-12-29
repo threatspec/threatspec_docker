@@ -17,4 +17,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           tag_with_ref: true
+          repository: threatspec/threatspec_docker
+
       
