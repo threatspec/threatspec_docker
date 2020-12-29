@@ -25,3 +25,15 @@ docker build --build-arg PIP="false" --build-arg BRANCH="master" -t threatspec .
 docker build -t threatspec .
 ```
 
+## Usage
+
+The easiest way to use this Docker container is to treat it as another function. Add the following alias to you `.bashrc` (or `.zshrc`, or whatever else environment you are running)
+
+### Linux/Mac (Bash/ZSH)
+
+```bash
+alias threatspec="docker run -v $(pwd):/app -w /app threatspec"
+```
+
+
+### Windows (TBD)
