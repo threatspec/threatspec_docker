@@ -7,16 +7,6 @@ on:
     branches: [ main ]
 
 jobs:
-
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag threatspec:$(date +%s) --tag threatspec:latest
-
   push_to_registry:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
@@ -27,5 +17,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           tag_with_ref: true
-          tags: threatspec/threatspec_docker:latest
       
