@@ -18,7 +18,7 @@ jobs:
         with:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          tags:threatspec/threatspec:latest,threatspec/threatspec:0.5.0
+          tags: threatspec/threatspec:latest,threatspec/threatspec:0.5.0
           repository: threatspec/threatspec
 
       
