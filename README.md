@@ -32,7 +32,7 @@ The easiest way to use this Docker container is to treat it as another function.
 ### Linux/Mac (Bash/ZSH)
 
 ```bash
-alias threatspec="docker run -v $(pwd):/app -w /app threatspec"
+alias threatspec="docker run --rm -v $(pwd):/workingdir -w /workingdir threatspec"
 ```
 
 
